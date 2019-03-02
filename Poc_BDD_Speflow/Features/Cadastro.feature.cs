@@ -89,7 +89,7 @@ this.ScenarioInitialize(scenarioInfo);
                         "Barboza"});
             table1.AddRow(new string[] {
                         "Email",
-                        "wilsonbarboza2019"});
+                        "wilsonbarboza2020"});
             table1.AddRow(new string[] {
                         "Senha",
                         "Teste@123"});

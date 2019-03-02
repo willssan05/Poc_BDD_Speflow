@@ -8,7 +8,7 @@ Cenário: Realizar início de cadastro com sucesso
     Quando preencho os dados para criar um usuário novo
       |  Nome       | Wilson                      |
       |  Sobrenome  | Barboza                     |
-      |  Email      | wilsonbarboza2019           |
+      |  Email      | wilsonbarboza2020           |
       |  Senha      | Teste@123                   |
       |  Confirmar  | Teste@123                   |
       E prossigo para tela seguinte
