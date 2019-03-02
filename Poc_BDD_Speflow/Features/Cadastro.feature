@@ -6,10 +6,11 @@ Funcionalidade: Cadastro no Google
 Cenário: Realizar início de cadastro com sucesso
     Dado que eu acesse a página de cadastro do Google
     Quando preencho os dados para criar um usuário novo
-      |  Nome       | Wilson                      |
-      |  Sobrenome  | Barboza                     |
-      |  Email      | wilsonbarboza2020           |
-      |  Senha      | Teste@123                   |
-      |  Confirmar  | Teste@123                   |
+      | Informações      | Valores           |
+      | Nome             | Wilson            |
+      | Sobrenome        | Barboza           |
+      | Email            | wilsonbarboza2020 |
+      | Senha            | Teste@123         |
+      | Confirmar        | Teste@123         |
       E prossigo para tela seguinte
 Então é apresentada tela para informar o número de celular

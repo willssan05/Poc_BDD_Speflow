@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using Poc_BDD_Speflow.Pages;
 using System.Threading;
 using TechTalk.SpecFlow;
 
@@ -8,6 +9,7 @@ namespace Poc_BDD_Speflow.Steps
     [Binding]
     public class CadastroNoGoogleSteps
     {
+        GooglePage _googlePage;
         IWebDriver Browser;
         public string screenshotsPasta;
         int contador = 1;
@@ -23,7 +25,9 @@ namespace Poc_BDD_Speflow.Steps
         [BeforeScenario]
         public void Init()
         {
+            
             this.Browser = new ChromeDriver();
+            this._googlePage = new GooglePage(Browser);
             screenshotsPasta = @"C:\Users\will_\OneDrive\Documentos\Visual Studio 2017\Desenvolvimento\Poc_BDD_Speflow\Poc_BDD_Speflow\Evidencias\";
         }
 
@@ -51,29 +55,19 @@ namespace Poc_BDD_Speflow.Steps
         [When(@"preencho os dados para criar um usuário novo")]
         public void QuandoPreenchoOsDadosParaCriarUmUsuarioNovo(Table table)
         {
-            var nome = this.Browser.FindElement(By.Id("firstName"));
-            nome.SendKeys("Wilson");
 
-            var sobrenome = this.Browser.FindElement(By.Id("lastName"));
-            sobrenome.SendKeys("Barboza");
-
-            var usuario = this.Browser.FindElement(By.Id("username"));
-            usuario.SendKeys("wilsonbarboza12345678901");
-
-            var senha = this.Browser.FindElement(By.XPath("/ html / body / div[1] / div / div[2] / div[1] / div[2] / form / div[2] / div / div[1] / div[3] / div[1] / div[1] / div / div / div[1] / div / div[1] / input"));
-            senha.SendKeys("Teste@123");
-
-            var confsenha = this.Browser.FindElement(By.XPath("/html/body/div[1]/div/div[2]/div[1]/div[2]/form/div[2]/div/div[1]/div[3]/div[1]/div[3]/div/div/div[1]/div/div[1]/input"));
-            confsenha.SendKeys("Teste@123");
+            _googlePage.PreencherNome(table.Rows[0][1]);
+            _googlePage.PreencherSobrenome(table.Rows[1][1]);
+            _googlePage.PreencherUsuario(table.Rows[2][1]);
+            _googlePage.PreencherSenha(table.Rows[3][1]);
+            _googlePage.PreencherConfirmarSenha(table.Rows[4][1]);
 
         }
 
         [When(@"prossigo para tela seguinte")]
         public void QuandoProssigoParaTelaSeguinte()
         {
-
-            var btnProximo = this.Browser.FindElement(By.XPath("/ html / body / div[1] / div / div[2] / div[1] / div[2] / form / div[2] / div / div[2] / div[1] / div / content / span"));
-            btnProximo.Click();
+            _googlePage.ClickbtnProximo();
 
         }
 

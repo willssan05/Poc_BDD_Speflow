@@ -82,6 +82,9 @@ this.ScenarioInitialize(scenarioInfo);
     testRunner.Given("que eu acesse a página de cadastro do Google", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Dado ");
 #line hidden
             TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                        "Informações",
+                        "Valores"});
+            table1.AddRow(new string[] {
                         "Nome",
                         "Wilson"});
             table1.AddRow(new string[] {
@@ -98,9 +101,9 @@ this.ScenarioInitialize(scenarioInfo);
                         "Teste@123"});
 #line 8
     testRunner.When("preencho os dados para criar um usuário novo", ((string)(null)), table1, "Quando ");
-#line 14
-      testRunner.And("prossigo para tela seguinte", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
 #line 15
+      testRunner.And("prossigo para tela seguinte", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "E ");
+#line 16
 testRunner.Then("é apresentada tela para informar o número de celular", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Então ");
 #line hidden
             this.ScenarioCleanup();

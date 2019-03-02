@@ -101,6 +101,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Cadastro.feature</DependentUpon>
     </Compile>
+    <Compile Include="Pages\GooglePage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Steps\CadastroNoGoogleSteps.cs" />
   </ItemGroup>
@@ -118,7 +119,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Evidencias\" />
-    <Folder Include="Pages\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
