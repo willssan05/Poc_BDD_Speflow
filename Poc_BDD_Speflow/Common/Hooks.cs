@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing.Imaging;
+using System.Threading;
 using AventStack.ExtentReports;
 using AventStack.ExtentReports.Gherkin.Model;
 using AventStack.ExtentReports.Reporter;
@@ -75,9 +76,7 @@ namespace Poc_BDD_Speflow.Common
             // depois de rodar os testes, finalize o objeto do ExtentReports
             // essa função destrói o objeto e cria o arquivo html
             _extent.Flush();
-
-            // aqui abro o arquivo HTML após criá-lo
-            //System.Diagnostics.Process.Start(PathReport);
+        
         }
 
     }
