@@ -9,7 +9,7 @@ Cenário: Realizar início de cadastro com sucesso
       | Informações      | Valores           |
       | Nome             | Wilson            |
       | Sobrenome        | Barboza           |
-      | Email            | wilsonbarboza2020 |
+      | Email            | wilsonbarboza2080 |
       | Senha            | Teste@123         |
       | Confirmar        | Teste@123         |
       E prossigo para tela seguinte
