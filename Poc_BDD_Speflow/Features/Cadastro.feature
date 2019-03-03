@@ -14,3 +14,4 @@ Cenário: Realizar início de cadastro com sucesso
       | Confirmar        | Teste@123         |
       E prossigo para tela seguinte
 Então é apresentada tela para informar o número de celular
+
