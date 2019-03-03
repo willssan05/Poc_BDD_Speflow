@@ -56,7 +56,7 @@ namespace Poc_BDD_Speflow.Steps
         public void QuandoPreenchoOsDadosParaCriarUmUsuarioNovo(Table table)
         {
 
-            _googlePage.PreencherNome(table.Rows[0][1]);
+            //_googlePage.PreencherNome(table.Rows[0][1]);
             _googlePage.PreencherSobrenome(table.Rows[1][1]);
             _googlePage.PreencherUsuario(table.Rows[2][1]);
             _googlePage.PreencherSenha(table.Rows[3][1]);
