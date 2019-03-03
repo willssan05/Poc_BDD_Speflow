@@ -13,7 +13,7 @@ namespace Poc_BDD_Speflow.Steps
         IWebDriver Browser;
         public string screenshotsPasta;
         int contador = 1;
-        private string url = "https://accounts.google.com/signup/v2/webcreateaccount?hl=pt-BR&flowName=GlifWebSignIn&flowEntry=SignUp";
+        private string url = "https://accounts.google.com/signup/v2/webcreateaccount?hl=pt-BR&flowName=GlifWebSignIn&flowEntry=SignUpx1x";
 
         public void Screenshot(IWebDriver Browser, string screenshotsPasta)
         {
